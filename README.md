@@ -142,7 +142,7 @@ deep-research-agent/
 
 ---
 
-## 🔧 Tools & APIs
+## Tools & APIs
 
 | Tool | API | Purpose | Rate Limit |
 |------|-----|---------|------------|
@@ -177,7 +177,7 @@ Try these queries to test the system:
 
 ---
 
-## 📊 Tech Stack
+## Tech Stack
 
 - **LLM Provider**: [Groq](https://groq.com) (Llama 3.1)
 - **Agent Framework**: [LangGraph](https://github.com/langchain-ai/langgraph)
@@ -187,7 +187,7 @@ Try these queries to test the system:
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - Rate limits on free API tiers may cause delays
 - ArXiv papers are limited to AI/ML/CS topics
