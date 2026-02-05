@@ -1,4 +1,4 @@
-# 🏗️ DeepResearch Agent - Architecture
+# DeepResearch Agent - Architecture
 
 ## Overview
 
@@ -10,10 +10,10 @@ DeepResearch Agent is a **multi-agent AI system** that transforms natural langua
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│                              USER INTERFACE                                   │
-│                         (Streamlit @ localhost:8501)                          │
+│                              USER INTERFACE                                  │
+│                         (Streamlit @ localhost:8501)                         │
 │  ┌────────────────────────────────────────────────────────────────────────┐  │
-│  │  📝 Query Input  │  📊 Agent Status  │  📄 Report View  │  ⬇️ Download  │  │
+│  │  📝 Query Input  │  📊 Agent Status  │  📄 Report View  │  ⬇️ Download  │  
 │  └────────────────────────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────┬────────────────────────────────────────┘
                                       │
@@ -22,9 +22,9 @@ DeepResearch Agent is a **multi-agent AI system** that transforms natural langua
 │                           LANGGRAPH WORKFLOW                                  │
 │                         (State Machine Controller)                            │
 │                                                                               │
-│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐   │
-│  │   START     │───▶│   PLANNER   │───▶│  EXECUTOR   │───▶│  VERIFIER   │   │
-│  └─────────────┘    └─────────────┘    └─────────────┘    └──────┬──────┘   │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐     │
+│  │   START     │───▶│   PLANNER   │───▶│  EXECUTOR   │───▶│  VERIFIER  │    │
+│  └─────────────┘    └─────────────┘    └─────────────┘    └──────┬──────┘     │
 │                                              ▲                    │          │
 │                                              │   (retry if needed)│          │
 │                                              └────────────────────┘          │
@@ -49,7 +49,7 @@ DeepResearch Agent is a **multi-agent AI system** that transforms natural langua
 
 ## Agent Details
 
-### 1. 🧠 Planner Agent (`agents/planner.py`)
+### 1. Planner Agent (`agents/planner.py`)
 
 **Purpose**: Converts user query into a structured research plan.
 
@@ -80,7 +80,7 @@ DeepResearch Agent is a **multi-agent AI system** that transforms natural langua
 
 ---
 
-### 2. ⚡ Executor Agent (`agents/executor.py`)
+### 2. Executor Agent (`agents/executor.py`)
 
 **Purpose**: Executes each subtask by calling appropriate tools.
 
@@ -101,7 +101,7 @@ DeepResearch Agent is a **multi-agent AI system** that transforms natural langua
 
 ---
 
-### 3. ✅ Verifier Agent (`agents/verifier.py`)
+### 3. Verifier Agent (`agents/verifier.py`)
 
 **Purpose**: Validates research quality and completeness.
 
@@ -117,7 +117,7 @@ DeepResearch Agent is a **multi-agent AI system** that transforms natural langua
 
 ---
 
-### 4. 📝 Synthesizer Agent (`agents/synthesizer.py`)
+### 4. Synthesizer Agent (`agents/synthesizer.py`)
 
 **Purpose**: Compiles findings into a final research report.
 
